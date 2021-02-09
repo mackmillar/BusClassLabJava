@@ -9,5 +9,5 @@ public class PersonTest {
         person = new Person("Iggy");
     }
 
-    
+
 }
