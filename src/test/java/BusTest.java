@@ -1,4 +1,7 @@
 import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class BusTest {
 
@@ -6,6 +9,11 @@ public class BusTest {
 
     @Before
     public void before(){
+    bus = new Bus("Edinburgh");
+    }
 
+    @Test
+    public void hasDestination(){
+        assertEquals("Edinburgh", bus.getDestination());
     }
 }
