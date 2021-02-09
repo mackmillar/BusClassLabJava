@@ -16,4 +16,10 @@ public class BusTest {
     public void hasDestination(){
         assertEquals("Edinburgh", bus.getDestination());
     }
+
+    @Test
+    public void busStartsEmpty(){
+        assertEquals(0, bus.passengerCount());
+    }
+
 }
